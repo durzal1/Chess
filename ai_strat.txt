@@ -1,0 +1,34 @@
+1) algroithm starts by gathering all of these pieces alive(its team).
+2)For each of those pieces it gathers all possible moves and attack moves
+3) Then it gathers the player's pieces and all their possible moves/attacks
+4) It gives each of the player's moves a value(-infinity best and +infinity worst)
+5) the possible move for the AI that resulted in the possible moves for the player will get the value 
+of the lowest score(best move for player). 
+6) This will be done to every possible move. 
+7) then the AI will move to the spot that has highest score of those(best move for AI) 
+if there are multiple with highest randomly choses one
+This will result in the AI moving to best possible move based on the player's best possible move for the next turn.
+the more turns the AI computes the more advanced it will become. 
+HOW POINTS ARE SCORED:
+
+WIN CONDITION: done
+do when code makes progress
+if move is in range of enemy's king it will get infinite points since it is the ABSOLUTE best move(aka check)
+If move is 3 spots vertical or horizontal of enemy king +1 points(2 spots +2)
+
+
+KILLS: done
+if move is in range of enemy pawn +3 points
+if move is in range of enemy rook +5 points
+if move is in range of enemy bishop +5 points
+if move is in range of enemy horse +6 points
+if move is in range of enemy queen +13 points
+GAINING TERRITROY: done
+This is all assuming AI starts on the top.
+If move goes into enemy territory col 4-7 + 2
+DEATH: done
+If move is in enemy LOS(different for every piece) -15
+
+add each move/attack it plus its rank plus its current pos in one list to an unorganized list
+
+self.best_move.append([[int(unorganized[i][0][0]), int(unorganized[i][0][1]) ], unorganized[i][1], unorganized[i][2], unorganized[i][3],unorganized[i][0][5]] )

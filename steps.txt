@@ -1,0 +1,13 @@
+1. make a tkinter menu that says 2 player or 1 player and create 2 mains respectivly (DONE)
+    TWO PLAYER
+2. Clicking on a spot gives you the col and row (DONE)
+3. based on where you click it checks the list to see if a piece is there and what that piece is. (DONE)
+4. if a piece is there it checks which piece it is and goes through a elif statement to show valid spaces you can move.(DONE)
+4a.  user taps piece again circles disapear and they can change which piece they pick (DONE)
+
+5. again checks where you click and makes sure its valid by checked the previous elif statement.
+6. if it is valid it moves the piece there.(not sure how to make the move piece yet)
+7. when somebody moves it keeps track of whos turn it is. also writes this down on the map somewhere prob tkinter
+8. when its white or black respectivly you can only click on those pieces. 
+ OPTIONAL
+ 1. press button and that will turn the grid 180 degrees.
